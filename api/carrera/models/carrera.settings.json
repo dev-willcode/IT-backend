@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carreras",
+  "info": {
+    "name": "Carrera",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "frase_promocional": {
+      "type": "text"
+    },
+    "definicion_titulo_obtenido": {
+      "type": "string"
+    },
+    "perfiles": {
+      "collection": "perfil",
+      "via": "carrera"
+    },
+    "objetivos": {
+      "collection": "objetivo",
+      "via": "carrera"
+    },
+    "titulo": {
+      "model": "titulo"
+    }
+  }
+}

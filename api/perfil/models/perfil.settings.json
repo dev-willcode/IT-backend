@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "perfils",
+  "info": {
+    "name": "perfil"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "descripcion": {
+      "type": "text"
+    },
+    "tipo_perfil": {
+      "type": "enumeration",
+      "enum": [
+        "perfil_profesional",
+        "perfil_ocupacional"
+      ]
+    },
+    "competencias": {
+      "type": "text"
+    },
+    "imagen": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "carrera": {
+      "via": "perfiles",
+      "model": "carrera"
+    }
+  }
+}

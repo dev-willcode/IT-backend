@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "titulos",
+  "info": {
+    "name": "titulo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "periodos": {
+      "type": "integer"
+    },
+    "seccion": {
+      "type": "enumeration",
+      "enum": [
+        "Matutina",
+        "Diurna",
+        "Nocturna"
+      ]
+    },
+    "modalidad": {
+      "type": "enumeration",
+      "enum": [
+        "Hibrida",
+        "Presencial"
+      ]
+    }
+  }
+}

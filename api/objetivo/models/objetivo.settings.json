@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "objetivos",
+  "info": {
+    "name": "objetivo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "icono": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "carrera": {
+      "via": "objetivos",
+      "model": "carrera"
+    }
+  }
+}

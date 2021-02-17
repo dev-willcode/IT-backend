@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/directivos",
+      "handler": "directivo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/directivos/count",
+      "handler": "directivo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/directivos/:id",
+      "handler": "directivo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/directivos",
+      "handler": "directivo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/directivos/:id",
+      "handler": "directivo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/directivos/:id",
+      "handler": "directivo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
