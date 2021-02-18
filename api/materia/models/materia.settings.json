@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materias",
+  "info": {
+    "name": "Materia",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "semestre": {
+      "model": "semestre",
+      "via": "materias"
+    }
+  }
+}

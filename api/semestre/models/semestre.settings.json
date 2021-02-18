@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "semestres",
+  "info": {
+    "name": "Semestre"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "materias": {
+      "via": "semestre",
+      "collection": "materia"
+    }
+  }
+}
