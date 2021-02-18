@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "directivos",
   "info": {
-    "name": "directivo"
+    "name": "directivo",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -29,6 +30,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "carrera": {
+      "via": "directivos",
+      "model": "carrera"
     }
   }
 }

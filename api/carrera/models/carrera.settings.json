@@ -28,6 +28,14 @@
       "collection": "objetivo",
       "via": "carrera"
     },
+    "directivos": {
+      "collection": "directivo",
+      "via": "carrera"
+    },
+    "semestres": {
+      "collection": "semestre",
+      "via": "carrera"
+    },
     "titulo": {
       "model": "titulo"
     }

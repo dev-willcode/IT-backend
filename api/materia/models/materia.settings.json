@@ -15,8 +15,8 @@
       "type": "string"
     },
     "semestre": {
-      "model": "semestre",
-      "via": "materias"
+      "via": "materias",
+      "model": "semestre"
     }
   }
 }
