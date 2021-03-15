@@ -38,6 +38,14 @@
     },
     "titulo": {
       "model": "titulo"
+    },
+    "profesores": {
+      "via": "carrera",
+      "collection": "profesor"
+    },
+    "galerias": {
+      "via": "carrera",
+      "collection": "galeria"
     }
   }
 }

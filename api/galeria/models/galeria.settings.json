@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galerias",
+  "info": {
+    "name": "Galeria",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "imagenes": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "carrera": {
+      "model": "carrera",
+      "via": "galerias"
+    }
+  }
+}
