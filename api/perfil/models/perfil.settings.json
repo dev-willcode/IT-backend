@@ -14,13 +14,6 @@
     "descripcion": {
       "type": "text"
     },
-    "tipo_perfil": {
-      "type": "enumeration",
-      "enum": [
-        "perfil_profesional",
-        "perfil_ocupacional"
-      ]
-    },
     "competencias": {
       "type": "text"
     },
@@ -36,8 +29,11 @@
       "required": false
     },
     "carrera": {
-      "via": "perfiles",
-      "model": "carrera"
+      "model": "carrera",
+      "via": "perfiles"
+    },
+    "tipo_perfil": {
+      "type": "string"
     }
   }
 }
