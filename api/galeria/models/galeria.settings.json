@@ -11,8 +11,8 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "imagenes": {
-      "collection": "file",
+    "imagen": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -25,6 +25,15 @@
     "carrera": {
       "model": "carrera",
       "via": "galerias"
+    },
+    "ubicacion_externa": {
+      "type": "string"
+    },
+    "ubicacion_interna": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
     }
   }
 }

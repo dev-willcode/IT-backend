@@ -21,8 +21,8 @@
       "type": "string"
     },
     "perfiles": {
-      "collection": "perfil",
-      "via": "carrera"
+      "via": "carrera",
+      "collection": "perfil"
     },
     "objetivos": {
       "collection": "objetivo",
