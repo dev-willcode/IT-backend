@@ -25,10 +25,6 @@
       "plugin": "upload",
       "required": false
     },
-    "materias": {
-      "collection": "materia",
-      "via": "semestre"
-    },
     "carrera": {
       "model": "carrera",
       "via": "semestres"
@@ -37,6 +33,9 @@
       "type": "string"
     },
     "descripcion": {
+      "type": "text"
+    },
+    "materias": {
       "type": "text"
     }
   }

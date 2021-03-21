@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "titulos",
   "info": {
-    "name": "titulo"
+    "name": "titulo",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -30,6 +31,9 @@
         "Hibrida",
         "Presencial"
       ]
+    },
+    "definicion_promocional": {
+      "type": "string"
     }
   }
 }
