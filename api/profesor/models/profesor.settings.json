@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "profesors",
+  "collectionName": "profesores",
   "info": {
     "name": "Profesor",
     "description": ""
@@ -20,11 +20,7 @@
     "foto": {
       "model": "file",
       "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
+      "allowedTypes": ["images", "files", "videos"],
       "plugin": "upload",
       "required": false
     },
