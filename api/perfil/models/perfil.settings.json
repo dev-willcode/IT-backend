@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "perfiles",
+  "collectionName": "perfils",
   "info": {
     "name": "perfil",
     "description": ""
@@ -20,7 +20,11 @@
     "imagen": {
       "model": "file",
       "via": "related",
-      "allowedTypes": ["images", "files", "videos"],
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
       "plugin": "upload",
       "required": false
     },
