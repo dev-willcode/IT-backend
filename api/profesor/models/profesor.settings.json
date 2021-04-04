@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "profesors",
+  "collectionName": "profesores",
   "info": {
-    "name": "Profesor",
+    "name": "Profesores",
     "description": ""
   },
   "options": {

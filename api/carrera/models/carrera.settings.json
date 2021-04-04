@@ -33,8 +33,8 @@
       "via": "carrera"
     },
     "semestres": {
-      "via": "carrera",
-      "collection": "semestre"
+      "collection": "semestre",
+      "via": "carrera"
     },
     "titulo": {
       "model": "titulo"
@@ -44,8 +44,14 @@
       "collection": "profesor"
     },
     "galerias": {
-      "via": "carrera",
-      "collection": "galeria"
+      "collection": "galeria",
+      "via": "carrera"
+    },
+    "mision": {
+      "type": "text"
+    },
+    "vision": {
+      "type": "text"
     }
   }
 }

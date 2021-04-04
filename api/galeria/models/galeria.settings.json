@@ -23,8 +23,8 @@
       "required": false
     },
     "carrera": {
-      "model": "carrera",
-      "via": "galerias"
+      "via": "galerias",
+      "model": "carrera"
     },
     "ubicacion_externa": {
       "type": "string"

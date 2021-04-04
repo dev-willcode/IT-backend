@@ -26,8 +26,8 @@
       "required": false
     },
     "carrera": {
-      "model": "carrera",
-      "via": "semestres"
+      "via": "semestres",
+      "model": "carrera"
     },
     "nombre_promocional": {
       "type": "string"
